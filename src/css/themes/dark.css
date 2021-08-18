@@ -32,14 +32,29 @@ header {
 
 /* Making website accessable to mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-device-width: 640px) {
     body {
         background-color: orange;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-device-width: 480) and (-webkit-min-device-pixel-ratio: 2) {
     body {
         background-color: teal;
+    }
+}
+
+@media screen and (min-device-width: 786px) and (max-device-width: 1024px) {
+    body {
+        background-color: blue;
+    }
+}
+
+
+/* Desktop reconfiguring */
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: green;
     }
 }
