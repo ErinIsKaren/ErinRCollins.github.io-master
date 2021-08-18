@@ -32,13 +32,13 @@ header {
 
 /* Making website accessable to mobile */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         background-color: orange;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     body {
         background-color: teal;
     }
